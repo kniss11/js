@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square1{
+            background-color: #fc0;
+            width: 200px;
+            height: 200px;
+            border : 1px solid black;
+            float: left;
+            margin : 0 10px;
+
+        }
+
+        .square2{
+            background-color: #47c2fb;
+            width: 200px;
+            height: 200px;
+            border : 1px solid black;
+            float: left;
+            margin : 0 10px;
+
+        }
+
+        .square3{
+            background-color: #fd6f7d;
+            width: 200px;
+            height: 200px;
+            border : 1px solid black;
+            float: left;
+            margin : 0 10px;
+
+        }
+
+
+    </style>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <ol>
+        <li>$('대상').css()</li>
+        <li>$('대상').hide()</li>
+        <li>$('대상').show()</li>
+        <li>$('대상').toggle()</li>
+        <li>$('대상').width()</li>
+        <li>$('대상').hight()</li>
+    </ol>
+
+    <button type="button" id="btn1">Hide</button>
+    <button type="button" id="btn2">Show</button>
+    <button type="button" id="btn3">Toggle</button>
+    <button type="button" id="btn4">Big</button>
+    <button type="button" id="btn5">Small</button>
+    <hr>
+    <div class="square1">Show/Hide</div>
+    <div class="square2">Toggle</div>
+    <div class="square3">Width/Height</div>
+
+    <script>
+        $('#btn1').click(function(){
+            $('.square1').hide(1000);
+        });
+        $('#btn2').click(function(){
+            $('.square1').show(1000);
+        });
+        $('#btn3').click(function(){
+            $('.square2').toggle(1000);
+        });
+        $('#btn4').click(function(){
+            $('.square3').width(400);
+            $('.square3').height(400);
+
+        });
+        $('#btn5').click(function(){
+            $('.square3').width(200);
+            $('.square3').height(200);
+        });
+
+
+    
+    
+    </script>
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩 if 문</title>
+</head>
+<body>
+    <script>
+       
+
+       let num1 = prompt("국어점수를 입력하세요!");
+       let num2 = prompt("영어점수를 입력하세요!");
+       let num3 = prompt("수학점수를 입력하세요!");
+       let num4 = prompt("전산점수를 입력하세요!");
+        
+       let num5 = Number(num1) + Number(num2) + Number(num3) + Number(num4);
+       let num6 = num5 / 4 ;
+
+       let num7;
+       let num8;
+
+       if(num6 >= 90){
+           num7="수";
+           if(num6 >= 95){
+               num8="A+";
+           }
+           else{
+               num8="A";
+            }
+       }
+       else if(num6 >=80){
+           num7="우";
+           if(num6 >= 85){
+               num8="B+";
+           }
+           else{
+               num8="B";
+            }
+       }
+       else{
+           num7="가";
+           num8="D";
+       }
+
+    alert("국어점수 : " + num1 + "\n" + "영어점수 :" + num2 + "\n" + "수학점수 : " + num3 + "\n" + "전산점수 : " + num4 + "\n" + "총점 : " + num5 +"\n" + "평균 : " + num6 + "\n" + "평점 : " + num7 +  "\n" + "학점 : " + num8);
+    </script>
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
+let num1 = prompt("국어점수를 입력해 주세요!");
+let num2 = prompt("영어점수를 입력해 주세요!");
+let num3 = prompt("수학점수를 입력해 주세요!");
+let num4 = prompt("전산점수를 입력해 주세요!");
+
+let num5 = Number(num1) + Number(num2) + Number(num3) + Number(num4);
+let num6 = num5 / 4;
+
+let num7;
+let grade;
+
+if( num6 >= 90 ){
+    num7 = "수";
+    if( num6 >= 95 ){
+        grade="A+";
+    }else{
+        grade="A";
+    }
+}else if( num6 >= 80 ){
+    num7 = "우";
+    if( num6 >= 85 ){
+        grade="B+";
+    }else{
+        grade="B";
+    }
+}else if( num6 >= 70 ){
+    num7 = "미";
+    if( num6 >= 75 ){
+        grade="C+";
+    }else{
+        grade="C";
+    }
+}else if( num6 >= 60 ){
+    num7 = "양";
+    if( num6 >= 65 ){
+        grade="D+";
+    }else{
+        grade="D";
+    }
+}else{
+    num7 = "가";
+    grade = "F";
+}
+
+
+alert("국어점수 : " + num1 + "\n" + "영어점수 : " + num2 + "\n" + "수학점수 : " + num3 + "\n" + "전산점수 : " + num4 + "\n"  + "총점 : " + num5 + "\n"  + "평균 : " + num6 + "\n" + "평점 : " + num7 + "\n"  + "학점 : " + grade + "\n"  );
+
+
+ -->
